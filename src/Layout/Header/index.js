@@ -1,5 +1,7 @@
+import SearchInput from '../../components/searchinput';
 import React from 'react';
 import { AiOutlineMenuFold, AiOutlineMenuUnfold } from 'react-icons/ai';
+import Nofication from '../../components/notification';
 
 const style = {
   zIndex: 1,
@@ -24,8 +26,8 @@ const MainHeader = ({ collapsed, toggle, breakpoint }) => {
           })}
         </>
       ) : null}
-      <div>form search</div>
-      <div>form</div>
+      <SearchInput />
+      <Nofication />
     </div>
   );
 };
