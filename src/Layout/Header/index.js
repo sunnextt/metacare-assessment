@@ -2,6 +2,7 @@ import SearchInput from '../../components/searchinput';
 import React from 'react';
 import { AiOutlineMenuFold, AiOutlineMenuUnfold } from 'react-icons/ai';
 import Nofication from '../../components/notification';
+import TopMenu from '../../components/topMenu';
 
 const style = {
   zIndex: 1,
@@ -17,18 +18,21 @@ const style = {
 const MainHeader = ({ collapsed, toggle, breakpoint }) => {
   console.log(collapsed, breakpoint);
   return (
-    <div className="header" style={style}>
-      {breakpoint ? (
-        <>
-          {React.createElement(collapsed ? AiOutlineMenuFold : AiOutlineMenuUnfold, {
-            className: 'trigger',
-            onClick: toggle,
-          })}
-        </>
-      ) : null}
-      <SearchInput />
-      <Nofication />
-    </div>
+    <>
+      <div className="header" style={style}>
+        {breakpoint ? (
+          <>
+            {React.createElement(collapsed ? AiOutlineMenuFold : AiOutlineMenuUnfold, {
+              className: 'trigger',
+              onClick: toggle,
+            })}
+          </>
+        ) : null}
+        <SearchInput />
+        <Nofication />
+      </div>
+      <TopMenu />
+    </>
   );
 };
 

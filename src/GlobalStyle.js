@@ -135,6 +135,16 @@ line-height: 24px;
 color: #6837EF;
 }
 
+hover_as_link {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+ul {
+    margin: 0;
+}
+
 `;
 
 export default GlobalStyle;
