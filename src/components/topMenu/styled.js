@@ -3,6 +3,10 @@ import styled from 'styled-components';
 const CtopMenu = styled.div`
   padding: 0 3.5rem;
   border: 1px solid #ecebf5;
+
+  @media only screen and (max-width: 768px) {
+    padding: 0 1rem;
+  }
 `;
 export const Ul = styled.ul`
   text-decoration: none;
@@ -11,10 +15,14 @@ export const Ul = styled.ul`
   align-items: center;
   justify-content: flex-start;
   gap: 2em;
+
+  @media only screen and (max-width: 600px) {
+    gap: 1rem;
+  }
 `;
 export const Li = styled.li`
   border: none;
-  padding: 1rem;
+  padding-bottom: 1rem;
   -webkit-transition: border 500ms ease-out;
   -moz-transition: border 500ms ease-out;
   -o-transition: border 500ms ease-out;

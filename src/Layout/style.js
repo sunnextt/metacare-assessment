@@ -17,7 +17,6 @@ const Layout = styled(_Layout)`
   }
   .site_layout_background {
     background-color: #fff;
-    border: 1px solid #ecebf5;
   }
 
   .trigger {

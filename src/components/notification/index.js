@@ -8,12 +8,17 @@ const Div = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 11px 16px;
+  padding: 0.78rem 1.1rem;
   border: 1px solid #ecebf5;
   box-sizing: border-box;
   border-radius: 8px;
   gap: 2rem;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+  @media only screen and (max-width: 768px) {
+    gap: 1rem;
+    padding: 0.5rem 1.1rem;
+  }
 
   span {
     background: #f25a68;
@@ -44,11 +49,15 @@ const Avater = styled.div`
   align-items: center;
   justify-content: center;
   gap: 10px;
-  h6 {
-    font-size: 12px;
-    padding: 0px 7px;
+
+  .circle {
     border-radius: 50%;
     border: 1px solid #6837ef;
+  }
+
+  h6 {
+    font-size: 0.9rem;
+    padding: 0px 0.8rem;
   }
 
   img {
@@ -66,7 +75,9 @@ const Nofication = () => {
       </AlertDiv>
       <Divider type="vertical" style={{ height: '30px' }} />
       <Avater>
-        <h6>MA</h6>
+        <div className="circle">
+          <h6>MA</h6>
+        </div>
         <img src={downArrow} alt="downArrow" />
       </Avater>
     </Div>
