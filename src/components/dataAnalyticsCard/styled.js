@@ -77,7 +77,7 @@ export const HeaderBox = styled.div`
     font-family: 'Gelion bold';
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.29rem;
     line-height: 26px;
     display: flex;
     align-items: center;
@@ -88,7 +88,7 @@ export const HeaderBox = styled.div`
     justify-content: center;
     align-items: center;
     font-family: 'Gelion Medium';
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 22px;
     letter-spacing: 0em;
@@ -136,7 +136,7 @@ export const CCard = styled.div`
 `;
 export const CardText = styled.h6`
   font-family: 'Gelion regular';
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
@@ -145,7 +145,7 @@ export const CardText = styled.h6`
 `;
 export const CardTextH3 = styled.h3`
   font-family: 'Gelion Semi Bold';
-  font-size: 20px;
+  font-size: 1.43rem;
   font-weight: 600;
   line-height: 32px;
   letter-spacing: 0em;

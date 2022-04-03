@@ -39,7 +39,7 @@ export const TMButton = styled.button`
   font-family: 'Gelion regular';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.43rem;
   line-height: 24px;
   &:hover {
     font-family: 'Gelion bold';
