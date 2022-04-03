@@ -57,7 +57,11 @@ const Avater = styled.div`
 
   h6 {
     font-size: 0.9rem;
-    padding: 0px 0.8rem;
+    padding: 0.4rem 0.8rem;
+
+    @media only screen and (max-width: 768px) {
+      padding: 0rem 0.8rem;
+    }
   }
 
   img {
